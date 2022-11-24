@@ -9,9 +9,9 @@ import { UserService } from '../services/user.service';
 export class UserDetailComponent implements OnInit {
 
   constructor(private userService:UserService) { }
-  user: { name: string; job: string; gender: string; country: string; age: number; } | undefined;
+  user: { name: string; job: string; gender: string; country: string; age: number; avatar: string; } | undefined;
   ngOnInit(): void {
-    this.userService.OnShowDetailsClicked.subscribe((data:{name:string,job:string,gender:string,country:string,age:number})=>{
+    this.userService.OnShowDetailsClicked.subscribe((data:{name:string,job:string,gender:string,country:string,age:number,avatar:string})=>{
       this.user=data;
     })
   }

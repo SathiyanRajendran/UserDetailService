@@ -9,7 +9,7 @@ import { UserService } from './services/user.service';
 })
 export class AppComponent {
   title = 'UserDetailService';
-
+  myimg:string='assets/Images/Natural scenes.jpg'
   constructor(private userService:UserService){
 
   }
